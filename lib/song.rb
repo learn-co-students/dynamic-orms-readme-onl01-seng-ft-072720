@@ -2,7 +2,7 @@ require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
 class Song
-
+# I'm making some changes.
 
   def self.table_name
     self.to_s.downcase.pluralize
