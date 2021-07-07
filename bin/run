@@ -11,3 +11,17 @@ puts "song album: " + song.album
 song.save
 
 DB[:conn].execute("SELECT * FROM songs")
+
+song = Song.new(name: "World", album: "Two")
+puts "song name: " + song.name
+puts "song album: " + song.album
+song.save
+
+DB[:conn].execute("SELECT * FROM songs")
+
+# song = Song.new(name: "Hello", length: "25")
+# puts "song name: " + song.name
+# puts "song length: " + song.length
+# song.save
+
+# DB[:conn].execute("SELECT * FROM songs")
